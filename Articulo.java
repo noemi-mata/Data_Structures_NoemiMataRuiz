@@ -18,7 +18,7 @@ public class Articulo {
     }
 
     //Getters
-     public float getPrecio(){
+     public float getPrecio(){ 
         return precio;
     }
 

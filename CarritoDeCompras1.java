@@ -1,12 +1,22 @@
-import Articulo.java as Articulo;
+import java.util.ArrayList;
+import java.util.List;
 
-public interface CarritoDeCompras1 <T> extends Articulo{
+public class CarritoDeCompras1<T> { // Quitamos 'implements Articulo<T>'
+    
+    private final List<T> articulos = new ArrayList<>();
 
-        void agregar(T articulo);
-        void pagar();
-        void eliminar(T articulo);
-        void cancelar();     
-        void vaciarCarrito();
-        void buscarProducto(); 
+    public void agregar(T articulo) {
+        if (articulo != null) {
+            articulos.add(articulo);
+            System.out.println("Artículo agregado: " + articulo);
+        }
+    }
 
+    public void eliminar(T articulo) {
+        if (articulos.remove(articulo)) {
+            System.out.println("Artículo eliminado del carrito.");
+        } else {
+            System.out.println("El artículo no se encuentra en el carrito.");
+        }
+    }
 }
