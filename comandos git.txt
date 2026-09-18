@@ -1,0 +1,16 @@
+1. Abrir la consola en la ruta
+cmd
+
+2. Clonar
+git clone <URL> 
+
+3. Cambiar a la carpeta
+cd <>
+
+4.git status
+
+5.git add . (nombre)
+
+6.git commit -m ""
+
+7. git push origin main
