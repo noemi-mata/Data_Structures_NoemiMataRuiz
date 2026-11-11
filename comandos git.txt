@@ -4,6 +4,7 @@ cmd
 2. Clonar
 git clone <URL> 
 
+
 3. Cambiar a la carpeta
 cd <>
 
@@ -14,3 +15,10 @@ cd <>
 6.git commit -m ""
 
 7. git push origin main
+
+git Branch <- ver la rama en la que estamos
+
+git Branch <feature/recursividad> <- Crear una rama
+git Branch -d -D <nombre><-Para eliminar una rama
+notepad .gitignore *.class <- ignorar todo lo que tenga .class
+del datos\unidad1\recursividad\*.class
